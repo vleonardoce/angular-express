@@ -1,0 +1,10 @@
+<form>
+  <input type="number" [(ngModel)]="number" name="number" placeholder="Numero">
+  <input type="button" value="Calcular" (click)="calculate()">
+</form>
+
+<br>
+
+<div *ngFor="let item of list">
+  <span highlight text="{{item}}">{{ item }}</span>
+</div>
